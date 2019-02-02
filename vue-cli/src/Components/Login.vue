@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class= "row">
-      <div class="col-xs-2 col-sm-4 col-sm-offset-2 col-me-6 col-me-offset-3">
+      <div class="col-xs-2 col-sm-4">
         <h1>Bienvenido!</h1>
         <div class="form-group">
           <label>Usuario</label>
@@ -35,6 +35,7 @@
           }, error =>{
             console.log(error);
           });
+          this.$router.push('/edit');
       }
     }
   }
